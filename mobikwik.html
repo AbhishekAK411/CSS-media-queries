@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #screen{
+            width: 100%;
+            height: 1000px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        #left{
+            width: 20%;
+            height: 100%;
+            /* border: 1px solid red; */
+            position: fixed;
+            z-index: 1;
+            background-color: rgb(0,36,71);
+        }
+
+        #left > div{
+            width: 200px;
+            height: 80px;
+            margin-top: 20px;
+            margin-left: 30px;
+            /* border: 1px solid yellow; */
+        }
+
+        #left > div > img{
+            width: 100%;
+            height: 100%;
+        }
+
+        #navbar{
+            width: 80%;
+            height: 60px;
+            border: 1px solid blue;
+            z-index: 1;
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+
+
+
+        @media screen and (max-width : 1168px){
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #screen{
+            width: 100%;
+            height: 1000px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        #left{
+            display: none;
+        }
+
+        #navbar{
+            width: 80%;
+            height: 60px;
+            border: 1px solid blue;
+            z-index: 1;
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div id="screen">
+        <div id="left">
+            <div>
+                <img src="https://zeevector.com/wp-content/uploads/2021/02/Mobikwik-Logo-Vector-White.png" alt="" />
+            </div>
+        </div>
+        <div id="navbar">Navbar</div>
+    </div>
+
+
+</body>
+</html>
